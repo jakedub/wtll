@@ -1,0 +1,1851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	
+	<open>1</open>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10201"></atom:link>
+	<Schema name="Enrollment Address" id="S_Enrollment_Address_SSSSSSSSSSSS">
+		<SimpleField type="string" name="Program_Name"><displayName>&lt;b&gt;Program Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Division_Name"><displayName>&lt;b&gt;Division Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Account_First_Name"><displayName>&lt;b&gt;Account First Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Account_Last_Name"><displayName>&lt;b&gt;Account Last Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Player_First_Name"><displayName>&lt;b&gt;Player First Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Player_Last_Name"><displayName>&lt;b&gt;Player Last Name&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Player_Gender"><displayName>&lt;b&gt;Player Gender&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Player_Birth_Date"><displayName>&lt;b&gt;Player Birth Date&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Street_Address"><displayName>&lt;b&gt;Player Street&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="City"><displayName>&lt;b&gt;City&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="State"><displayName>&lt;b&gt;State&lt;/b&gt;</displayName>
+</SimpleField>
+		<SimpleField type="string" name="Postal_Code"><displayName>&lt;b&gt;Postal Code&lt;/b&gt;</displayName>
+</SimpleField>
+	</Schema>
+	<Style id="hlightPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Program Name</b></td><td>$[Enrollment Address/Program_Name]</td></tr>
+  <tr><td><b>Division Name</b></td><td>$[Enrollment Address/Division_Name]</td></tr>
+  <tr><td><b>Account First Name</b></td><td>$[Enrollment Address/Account_First_Name]</td></tr>
+  <tr><td><b>Account Last Name</b></td><td>$[Enrollment Address/Account_Last_Name]</td></tr>
+  <tr><td><b>Player First Name</b></td><td>$[Enrollment Address/Player_First_Name]</td></tr>
+  <tr><td><b>Player Last Name</b></td><td>$[Enrollment Address/Player_Last_Name]</td></tr>
+  <tr><td><b>Player Gender</b></td><td>$[Enrollment Address/Player_Gender]</td></tr>
+  <tr><td><b>Player Birth Date</b></td><td>$[Enrollment Address/Player_Birth_Date]</td></tr>
+  <tr><td><b>Player Street</b></td><td>$[Enrollment Address/Street_Address]</td></tr>
+  <tr><td><b>City</b></td><td>$[Enrollment Address/City]</td></tr>
+  <tr><td><b>State</b></td><td>$[Enrollment Address/State]</td></tr>
+  <tr><td><b>Postal Code</b></td><td>$[Enrollment Address/Postal_Code]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="hlightPointStyle0">
+		<IconStyle>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Program Name</b></td><td>$[Enrollment Address/Program_Name]</td></tr>
+  <tr><td><b>Division Name</b></td><td>$[Enrollment Address/Division_Name]</td></tr>
+  <tr><td><b>Account First Name</b></td><td>$[Enrollment Address/Account_First_Name]</td></tr>
+  <tr><td><b>Account Last Name</b></td><td>$[Enrollment Address/Account_Last_Name]</td></tr>
+  <tr><td><b>Player First Name</b></td><td>$[Enrollment Address/Player_First_Name]</td></tr>
+  <tr><td><b>Player Last Name</b></td><td>$[Enrollment Address/Player_Last_Name]</td></tr>
+  <tr><td><b>Player Gender</b></td><td>$[Enrollment Address/Player_Gender]</td></tr>
+  <tr><td><b>Player Birth Date</b></td><td>$[Enrollment Address/Player_Birth_Date]</td></tr>
+  <tr><td><b>Player Street</b></td><td>$[Enrollment Address/Street_Address]</td></tr>
+  <tr><td><b>City</b></td><td>$[Enrollment Address/City]</td></tr>
+  <tr><td><b>State</b></td><td>$[Enrollment Address/State]</td></tr>
+  <tr><td><b>Postal Code</b></td><td>$[Enrollment Address/Postal_Code]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+		</LineStyle>
+		<PolyStyle>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="msn_placemark_circle">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_placemark_circle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_placemark_circle_highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="normPointStyle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Program Name</b></td><td>$[Enrollment Address/Program_Name]</td></tr>
+  <tr><td><b>Division Name</b></td><td>$[Enrollment Address/Division_Name]</td></tr>
+  <tr><td><b>Account First Name</b></td><td>$[Enrollment Address/Account_First_Name]</td></tr>
+  <tr><td><b>Account Last Name</b></td><td>$[Enrollment Address/Account_Last_Name]</td></tr>
+  <tr><td><b>Player First Name</b></td><td>$[Enrollment Address/Player_First_Name]</td></tr>
+  <tr><td><b>Player Last Name</b></td><td>$[Enrollment Address/Player_Last_Name]</td></tr>
+  <tr><td><b>Player Gender</b></td><td>$[Enrollment Address/Player_Gender]</td></tr>
+  <tr><td><b>Player Birth Date</b></td><td>$[Enrollment Address/Player_Birth_Date]</td></tr>
+  <tr><td><b>Player Street</b></td><td>$[Enrollment Address/Street_Address]</td></tr>
+  <tr><td><b>City</b></td><td>$[Enrollment Address/City]</td></tr>
+  <tr><td><b>State</b></td><td>$[Enrollment Address/State]</td></tr>
+  <tr><td><b>Postal Code</b></td><td>$[Enrollment Address/Postal_Code]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+	</Style>
+	<Style id="normPointStyle0">
+		<IconStyle>
+			<heading>0</heading>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+			<hotSpot x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+			<gx:headingMode>auto</gx:headingMode>
+		</IconStyle>
+		<BalloonStyle>
+			<text><![CDATA[<table border="0">
+  <tr><td><b>Program Name</b></td><td>$[Enrollment Address/Program_Name]</td></tr>
+  <tr><td><b>Division Name</b></td><td>$[Enrollment Address/Division_Name]</td></tr>
+  <tr><td><b>Account First Name</b></td><td>$[Enrollment Address/Account_First_Name]</td></tr>
+  <tr><td><b>Account Last Name</b></td><td>$[Enrollment Address/Account_Last_Name]</td></tr>
+  <tr><td><b>Player First Name</b></td><td>$[Enrollment Address/Player_First_Name]</td></tr>
+  <tr><td><b>Player Last Name</b></td><td>$[Enrollment Address/Player_Last_Name]</td></tr>
+  <tr><td><b>Player Gender</b></td><td>$[Enrollment Address/Player_Gender]</td></tr>
+  <tr><td><b>Player Birth Date</b></td><td>$[Enrollment Address/Player_Birth_Date]</td></tr>
+  <tr><td><b>Player Street</b></td><td>$[Enrollment Address/Street_Address]</td></tr>
+  <tr><td><b>City</b></td><td>$[Enrollment Address/City]</td></tr>
+  <tr><td><b>State</b></td><td>$[Enrollment Address/State]</td></tr>
+  <tr><td><b>Postal Code</b></td><td>$[Enrollment Address/Postal_Code]</td></tr>
+</table>
+]]></text>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+		<LineStyle>
+		</LineStyle>
+		<PolyStyle>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="pointStyleMap">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="pointStyleMap0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normPointStyle</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#hlightPointStyle</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_placemark_circle_highlight">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle_highlight.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Style id="sn_placemark_circle">
+		<IconStyle>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/placemark_circle.png</href>
+			</Icon>
+		</IconStyle>
+		<BalloonStyle>
+		</BalloonStyle>
+		<ListStyle>
+		</ListStyle>
+	</Style>
+	<Folder id="layer 0">
+		
+		<open>1</open>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1859235,39.8803421,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.180914,39.92461869999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1911313,39.91762969999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.18505999999999,39.88749200000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.21523309999999,39.83204620000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.19706769999999,39.8423616,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#msn_placemark_circle</styleUrl>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.21637799999999,39.92232250000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.19159859999999,39.88223910000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.16558409999999,39.9071351,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.19609919999999,39.89660290000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.18099289999999,39.87835569999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1621043,39.90655820000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.0834818,39.88355469999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1757094,39.88386719999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.16943559999999,39.87458589999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1820245,39.88131809999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.17340759999998,39.88398219999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1991438,39.87501529999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.20012819999999,39.89270239999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1868769,39.88085470000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.11077879999999,39.86425769999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.19364999999999,39.83844189999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.17172809999998,39.8988242,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.198774,39.8633395,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.169495,39.89090189999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.20340869999998,39.8367252,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1863754,39.90612249999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.16558409999999,39.9071351,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.17059140000001,39.89723090000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1883378,39.89158879999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.2689706,39.81363419999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1655787,39.90469820000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1512857,39.79300879999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1320513,39.90582989999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.15342089999999,39.8094337,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.18933989999999,39.87880949999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.12652109999999,39.91915890000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1680877,39.83685539999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1991438,39.87501529999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1676377,39.87014759999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.13943479999999,39.9190912,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.16849189999999,39.86214820000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.20831129999999,39.84059600000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1619611,39.9153818,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1831172,39.92069239999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.19186879999999,39.9167991,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.0778504,39.7786506,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.15676169999999,39.88654579999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.19706769999999,39.8423616,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.13312129999998,39.9238836,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.16558409999999,39.9071351,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.18013759999999,39.87814700000003,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1900112,39.91342099999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.22985809999999,39.89975379999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.2130239,39.90290729999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1883378,39.89158879999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.17344589999999,39.89702800000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1896686,39.90290429999997,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.2145812,39.88176319999999,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.0834818,39.88355469999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.2322257,39.94466690000004,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.17763299999999,39.8945588,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1611168,39.91801480000002,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.17101389999999,39.89977790000001,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.18765800000001,39.8910417,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.19519529999998,39.84525529999998,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			
+			<styleUrl>#pointStyleMap0</styleUrl>
+			<Style id="inline">
+				<IconStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</IconStyle>
+				<LineStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</LineStyle>
+				<PolyStyle>
+					<color>ffffffff</color>
+					<colorMode>normal</colorMode>
+				</PolyStyle>
+			</Style>
+			<ExtendedData>
+				<SchemaData schemaUrl="#S_Enrollment_Address_SSSSSSSSSSSS">
+				</SchemaData>
+			</ExtendedData>
+			<Point>
+				<coordinates>-86.1350448,39.87101550000001,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>

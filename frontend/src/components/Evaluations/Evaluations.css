@@ -1,0 +1,93 @@
+/* Hide everything you don't want printed */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  /* Only show the print area */
+  .print-area, .print-area * {
+    visibility: visible;
+  }
+
+  /* Ensure the print area is full width */
+  .print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Hide the print button inside print area */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Force page break after each group of two cards */
+  .print-area > div {
+    page-break-after: always;
+  }
+
+  /* Avoid breaking inside individual cards */
+  .print-area .MuiPaper-root {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 1rem;
+    margin-top: 75px;
+  }
+
+  /* Optional: make text smaller for print */
+  .print-area .MuiTypography-root {
+    font-size: 0.9rem;
+  }
+}
+
+/* Style evaluation cards for screen */
+.print-area .MuiPaper-root {
+  border: 1px solid #000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative; /* for rating placement */
+}
+
+/* Flex layout adjustments for batting/throwing/position */
+.print-area .hand-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Align options evenly */
+.print-area .hand-options {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+/* Position interest checkboxes */
+.print-area .position-interest {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0.5rem;
+}
+
+/* Bold section headers */
+.print-area .section-header {
+  font-weight: bold;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Smaller Rating text in bottom right of card */
+.print-area .rating {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.evalDiv {
+    padding-top: 10px;
+    margin-bottom:20px;
+
+}
