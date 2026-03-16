@@ -11,6 +11,7 @@ from league.views.fielding import assign_random_fielding
 from league.views.draft import DraftViewSet, DraftPlayerView, DraftTeamStatsView, AvailablePlayersView, DraftStateView
 from league.views.teams import TeamsByDivisionView
 from league.views.evaluation_uploads import UploadEvaluationCSVView
+from league.views.export_evaluations_csv import ExportEvaluationsCSV
 
 
 
@@ -40,5 +41,6 @@ urlpatterns = [
         # Players without evaluations
     path('players/no-evaluations/', PlayerWithoutEvaluationsView.as_view(), name='players_without_evaluations'),
         # Evaluation by division endpoint
-    path('evaluations/division/<int:division_id>/', EvaluationListViewByDivision.as_view(), name='evaluations-by-division')
+    path('evaluations/division/<int:division_id>/', EvaluationListViewByDivision.as_view(), name='evaluations-by-division'),
+    path('export-evaluations-csv/', ExportEvaluationsCSV.as_view(), name='export-evaluations-csv')
 ]
