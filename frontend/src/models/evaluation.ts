@@ -1,6 +1,8 @@
 import type { Player } from "./player";
 
 export interface Evaluation {
+  coach_request: string;
+  teammate_request: string;
   tier_spot?: number;
   id: number;
   player: Player;
