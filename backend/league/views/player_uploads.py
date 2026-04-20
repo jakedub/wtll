@@ -140,11 +140,14 @@ class UploadPlayersView(APIView):
                     continue
                 elif player_qs.exists():
                     player_obj = player_qs.first()
+                    
                     for field, value in defaults.items():
                         setattr(player_obj, field, value)
                     player_obj.save()
+                    player_obj.refresh_from_db()
+                    # Add this right after the refresh_from_db line
+                    
                     updated_ids.append(player_obj.id)
-                    logger.info(f"Updated player id={player_obj.id} row={row_num}")
                 else:
                     player_obj = Player.objects.create(first_name=first_name, last_name=last_name, date_of_birth=date_of_birth_obj, **defaults)
                     inserted_ids.append(player_obj.id)

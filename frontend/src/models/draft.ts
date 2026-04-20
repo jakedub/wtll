@@ -43,6 +43,7 @@ export interface Draft {
     year: number;
     created_at: string;
     selections?: DraftSelection[];
+    is_complete?:boolean;
 
 
 }

@@ -20,5 +20,5 @@ class TeamsByDivisionView(APIView):
     def get(self, request, division_id: int, *args, **kwargs):
         # division_id now comes from the URL
         teams = Team.objects.filter(division_id=division_id, is_active=True)
-        data = [{'id': t.id, 'name': t.name} for t in teams]
+        data = [{'id': t.id, 'name': t.name, 'coach': t.coach, 'assistant_coach': t.assistant_coach} for t in teams]
         return Response(data)

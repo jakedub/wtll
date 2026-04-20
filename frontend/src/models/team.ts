@@ -6,4 +6,5 @@ export interface Team {
   name: string;
   division: Division;
   coach: string;
+  assistant_coach: string;
 }

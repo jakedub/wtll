@@ -11,29 +11,74 @@ from django import forms
 class BulkTeamForm(forms.ModelForm):
     divisions = forms.ModelMultipleChoiceField(
         queryset=Division.objects.all(),
-        widget=admin.widgets.FilteredSelectMultiple("divisions", is_stacked=False),
-        required=True,
-        help_text="Select one or more divisions to create this team"
+        widget=admin.widgets.FilteredSelectMultiple("Divisions", is_stacked=False),
+        required=False,
+        help_text="Select one or more divisions when creating teams."
     )
+
     class Meta:
         model = Team
-        fields = 'name', 'year', 'divisions'
+        fields = ("name", "year", "division", "divisions", "coach", "assistant_coach", "jersey_color", "jersey_code", "is_active")
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        # When editing an existing team, preselect its division
+        if self.instance and self.instance.pk and self.instance.division:
+            self.fields["divisions"].initial = [self.instance.division]
 
 @admin.register(Team)
 class TeamAdmin(admin.ModelAdmin):
-    list_display = ("name", "division", "year", "is_active")
-    list_filter = ("division", "year", "is_active")
-    search_fields = ("name", "is_active")
+    list_display = ("name", "division", "year", "is_active", "coach", "assistant_coach", "jersey_color", "jersey_code")
+    list_filter = ("division", "year", "is_active", "name", "jersey_color")
+    search_fields = ("name",)
     form = BulkTeamForm
 
     actions = ["deactivate_teams"]
 
     def save_model(self, request, obj, form, change):
-        team_name = form.cleaned_data.get('name')
-        divisions = form.cleaned_data.get('divisions')
-        year = form.cleaned_data.get('year')
-        for division in divisions:
-            Team.objects.create(name=team_name, division=division, year=year)
+        team_name = form.cleaned_data.get("name")
+        divisions = form.cleaned_data.get("divisions")
+        year = form.cleaned_data.get("year")
+        coach = form.cleaned_data.get("coach")
+        assistant_coach = form.cleaned_data.get("assistant_coach")
+        jersey_color = form.cleaned_data.get("jersey_color")
+        jersey_code = form.cleaned_data.get("jersey_code")
+        is_active = form.cleaned_data.get("is_active")
+
+
+        # EDITING existing team
+        if change:
+            obj.name = team_name
+            obj.year = year
+            obj.coach = coach
+            obj.assistant_coach = assistant_coach
+            obj.jersey_color = jersey_color
+            obj.jersey_code = jersey_code
+            obj.is_active = is_active
+
+            if divisions:
+                obj.division = divisions.first()
+
+            obj.save()
+            return
+
+        # CREATING multiple teams
+        if divisions:
+            for division in divisions:
+                Team.objects.create(
+                    name=team_name,
+                    division=division,
+                    year=year,
+                    coach=coach,
+                    assistant_coach=assistant_coach,
+                    jersey_color=jersey_color,
+                    jersey_code=jersey_code,
+                    is_active=is_active
+                )
+        else:
+            obj.save()
+
     @admin.action(description="Deactivate selected teams")
     def deactivate_teams(self, request, queryset):
         updated = queryset.update(is_active=False)
@@ -89,7 +134,8 @@ class PositionAdmin(admin.ModelAdmin):
 
 @admin.register(Draft)
 class DraftAdmin(admin.ModelAdmin):
-    list_display = ("name", "year")
+    list_display = ("name", "year", "is_complete")
+    list_filter = ("year", "is_complete")
     search_fields = ("name",)
 
 @admin.register(DraftSelection)

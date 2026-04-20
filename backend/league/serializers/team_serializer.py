@@ -6,5 +6,5 @@ class TeamSerializer(serializers.ModelSerializer):
     division = DivisionSerializer(read_only=True)
     class Meta:
         model = Team
-        fields = ['id', 'name', 'coach', 'year', 'division', 'is_active']
+        fields = ['id', 'name', 'coach', 'year', 'division', 'is_active', 'assistant_coach']
     year = serializers.IntegerField()

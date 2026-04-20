@@ -12,7 +12,7 @@ class DraftSelection(models.Model):
     selected_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        unique_together = ('draft', 'player')  # Player can only be drafted once per draft
+        unique_together = ('draft', 'player')  # prevent duplicate picks
 
     def __str__(self):
         return f"{self.player} -> {self.team} ({self.division}) in {self.draft.name}"

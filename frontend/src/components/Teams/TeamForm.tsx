@@ -22,6 +22,7 @@ interface TeamPayload {
   name: string;
   coach: string;
   is_active: boolean;
+  assistant_coach: string;
   year: number;
   division: number;
 }
@@ -87,6 +88,7 @@ const TeamForm: React.FC = () => {
           is_active: true,
           year: year,
           division: divisionId,
+          assistant_coach: ""
         };
         console.log("Submitting team payload to API:", payload);
         const response = await axios.post("/api/teams/", payload);
